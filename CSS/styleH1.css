@@ -1,8 +1,8 @@
 body {
-    background-color: blueviolet;
+    background-color: rgb(233, 158, 202);
 }
 .index1 {
-    background-color: azure;
+    background-color: rgb(52, 245, 245);
     border-color: black;
     border-width: 5px;
     border-style: groove;
@@ -12,7 +12,7 @@ body {
     padding: 15px;
 }
 #cajas{
-    background-color: lightcoral;
+    background-color: rgb(248, 202, 49);
     border-color: black;
     border-width: 3px;
     border-style: solid;
@@ -24,10 +24,10 @@ body {
 }
 a:hover{
     font-size: 110%;
-    color: yellow;
+    color: rgb(4, 39, 155);
 }
 a:active{
-    color: rgb(14, 13, 13);
+    color: rgb(10, 10, 10);
 }
 a{
     text-decoration: none;
