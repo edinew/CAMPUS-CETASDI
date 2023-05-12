@@ -1,34 +1,295 @@
-body {
-    background-color: blueviolet;
-}
-.index1 {
-    background-color: azure;
-    border-color: black;
-    border-width: 5px;
-    border-style: groove;
-    border-radius: 10%;
-    height: 300px;
-    width: 150px;
-    padding: 15px;
-}
-#cajas{
-    background-color: lightcoral;
-    border-color: black;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 16px;
-    text-align: center;
-    margin: 5px;
-    font-size: 10px;
+/* Estilos generales */
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
-a:hover{
-    font-size: 110%;
-    color: yellow;
-}
-a:active{
-    color: rgb(14, 13, 13);
-}
-a{
+
+a {
+    color: #fff;
     text-decoration: none;
 }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la barra de navegación */
+
+nav {
+    background-color: #0071c5;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 1;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav form {
+    display: flex;
+}
+
+nav input[type="text"] {
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+nav button[type="submit"] {
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+    color: #0071c5;
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #0071c5;
+}
+
+/* Estilos del contenido principal */
+
+.hero {
+    background-image: url(hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.content {
+    margin: 100px 50px;
+}
+
+h3 {
+    color: #0071c5;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+/* Estilos del pie de página */
+
+footer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 30px;
+}
+
+.contact {
+    flex-basis: 30%;
+    text-align: center;
+    color: #555;
+}
+
+.contact h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contact ul li {
+    margin-right: 20px;
+}
+
+.contact ul li:last-child {
+    margin-right: 0;
+}
+
+.contact ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact ul li a:hover {
+    transform: scale(0.8);
+    box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 0.75);
+}
+
+.newsletter {
+    flex-basis: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #555;
+}
+
+.newsletter h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.newsletter label {
+    font-size: 18px;
+    flex-basis: 100%;
+    margin-bottom: 5px;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px 0px
+
+
+    /* Carrusel */
+
+    .carousel {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      
+      .carousel img {
+        display: inline-block;
+        max-width: 150px;
+        height: auto;
+        filter: grayscale(100%);
+        margin: 0 10px;
+        animation: carousel 20s linear infinite;
+      }
+      
+      @keyframes carousel {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+
+      /** este es la prueba del logo*/
+
+      header {
+        background: linear-gradient(to bottom, #63ace5, #0a599e);
+        padding: 20px 0;
+      }
+      
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      
+      .logo img {
+        max-width: 150px;
+        height: auto;
+      }
+      
+      form {
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      }
+      
+      input[type="text"] {
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        width: 300px;
+      }
+      
+      button[type="submit"] {
+        background-color: #63ace5;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #0a599e;
+      }
+      
+      ul {
+        display: flex;
+        list-style: none;
+      }
+      
+      ul li {
+        margin-right: 20px;
+      }
+      
+      ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        transition: all 0.2s ease-in-out;
+      }
+      
+      ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      
+      
